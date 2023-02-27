@@ -1,3 +1,4 @@
 # odin-recipes
 
-Hello TOP!
+Hello TOP community!
+This is my first project for TOP!
