@@ -1,0 +1,62 @@
+body{
+    background-color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    background-image: linear-gradient(45deg, red,blue);
+    color:ghostwhite;
+    margin: auto;
+    padding-top: 10px;
+    width: 50%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color:cadetblue;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+li{
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+li:last-child{
+    border-bottom: none;
+}
+
+li a{
+    display: block;
+    width: auto;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/*Link Styles*/
+a{
+    font-size: 22px;
+    background-color: cadetblue;
+}
+
+a:visited{
+    color: crimson;
+}
+
+a:hover{
+    background-color: lightgreen;
+    color: white;
+}
+
+a:active{
+    background-color: pink;
+    color: white;
+}
