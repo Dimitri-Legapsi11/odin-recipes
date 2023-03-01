@@ -31,7 +31,6 @@ ol li{
     font-size: 3em;
     margin: 10px auto;
     padding: 10px auto;
-    position: relative;
     color: aqua;
 }
 
@@ -42,7 +41,7 @@ ol li{
 
 .container{
     border: 10px solid hsl(317, 100%, 54%);
-    width: 500px;
+    width: 450px;
     height: 300px;
     margin: 0;
     padding: 10px;

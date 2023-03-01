@@ -1,0 +1,120 @@
+body{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #1E2F7F;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+}
+
+
+
+ul li{
+    padding: 5px;
+    margin: 0 auto;
+}
+
+ol li{
+    padding: 10px;
+    margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#header{
+    font-size: 3em;
+    margin: 10px auto;
+    padding: 10px auto;
+    color: #F7EC36;
+}
+
+
+.container{
+    border: 10px solid #FD002E;
+    width: 450px;
+    height: 300px;
+    margin: 0;
+    padding: 10px;
+}
+
+.container img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+
+/*NEON LINK*/
+
+.neon-link{
+    font-size: 2rem;
+    letter-spacing: 10px;
+
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color:  #FD002E;
+    border: #FD002E 0.125em solid ;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+
+    text-shadow:
+    0 0 0.125em hsl(0, 0%, 100%/ 0.5),
+    0 0 0.45em currentColor;
+
+    box-shadow:
+    inset 0 0 0.5em 0 #FD002E,
+    inset 0 0 0.5em 0 #FD002E;
+
+    position: relative;
+}
+
+
+.neon-link::before{
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: #FD002E;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: perspective(4em) rotateX(30deg) scale(1, 0.35);
+    filter: blur(1.5em);
+    opacity: 0.7;
+}
+
+.neon-link::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 1em 0.5em #FD002E;
+    opacity: 0;
+    transition: opacity 100ms linear;
+    z-index: -1;
+    background-color: #FD002E;
+}
+
+.neon-link:hover,
+.neon-link:focus {
+    color: white;
+    text-shadow: none;
+}
+
+.neon-link:hover::before,
+.neon-link:focus::before{
+    opacity: 1;
+}
+
+.neon-link:hover::after,
+.neon-link:focus::after{
+    opacity: 1;
+}
